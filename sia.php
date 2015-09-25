@@ -12,9 +12,9 @@
  * Troubleshooting:
  *	Install required dependencies
  *	Connect to RPC server from command line with cURL:
- * 		curl -s -X GET http://localhost:9980/consensus -A "Sia-Agent" | jq .
+ * 	curl -s -X GET http://localhost:9980/consensus -A "Sia-Agent"
  * 
- * 
+ * Methods:
  *	Wallet:
  *		is_wallet_locked()
  *		lock_wallet()
@@ -57,7 +57,7 @@
 
 class PHP_Sia
 {
-	// @var string IP:Port of the wallet daemon.  Usually 127.0.0.1:18082
+	// @var string IP:Port of the wallet daemon.  Usually 127.0.0.1:9980
     	public $rpc_address = '127.0.0.1:9980';
 
 	// Initialize the class, override defaults if needed
@@ -592,10 +592,7 @@ class PHP_Sia
 			throw new \Exception($data);
 			return false;
 		}
-
 		return $json;
 	}
 }
-
-
 ?>
