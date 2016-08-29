@@ -6,7 +6,7 @@ Additionally, PHP-Sia implements a simple SQL based backend for receiving and tr
 payments into local Sia addresses, which can be used for setting up an accounts based
 billing system.
 
-## Features
+### Features
 * View balances
 * Send funds
 * Upload, share and download files
@@ -15,10 +15,10 @@ billing system.
 * View transactions
 * and more!
 
-## Sia API Reference Documentation
+### Sia API Reference Documentation
 https://github.com/NebulousLabs/Sia/blob/master/doc/API.md
 
-## Usage
+### Usage
 Instantiating `class.sia.php` with database backend:
 
 ```
@@ -33,20 +33,20 @@ require('class.sia.php');
 $Sia = new PHP_Sia();
 ```
 
-## Dependencies:
+### Dependencies:
 * `php7.0-mysql`
 * `php7.0-curl`
 * `php7.0-bcmath`
 
-## Troubleshooting
+### Troubleshooting
 * Install required PHP dependencies (see Dependencies)
 * Confirm RPC server is running by connecting from command line with cURL:
 	`curl -s -X GET http://localhost:9980/consensus -A "Sia-Agent"`
 
-## Donations (Siacoin)
+### Donations (Siacoin)
 e2356d2f621d571684b5f8f1fd5c8f2aa79c9d35f3100a5ec1669f38ad0135df309b816caaf0
 
-## Methods
+### Methods
 #### Network:
 ```
 is_connected_to_peers()
