@@ -46,8 +46,8 @@ $Sia = new PHP_Sia();
 ## Donations (Siacoin)
 e2356d2f621d571684b5f8f1fd5c8f2aa79c9d35f3100a5ec1669f38ad0135df309b816caaf0
 
-## Methods Reference
-### Network:
+## Methods
+#### Network:
 ```
 is_connected_to_peers()
 get_consensus()
@@ -57,7 +57,7 @@ remove_peer($address)
 get_peer_address_parts($address)
 ```
 
-### Wallet:
+#### Wallet:
 ```
 wallet_islocked()
 wallet_lock()
@@ -75,31 +75,31 @@ wallet_transaction($transactionid)
 wallet_transaction_hastings_net($transaction)
 ```
 
-### Renter:
+#### Renter:
 ```
 hostdb()
 renter_files()
 renter_file($siapath)
 renter_upload($source, $siapath)
-	renter_download($siapath, $destination)
+renter_download($siapath, $destination)
 renter_delete($siapath)
 renter_rename($siapath, $newname)
 renter_check_siapath($siapath)
 ```
 
-### Conversion:
+#### Conversion:
 ```
 sia_round($n, $decimals = NULL)
 sc_to_hastings($siacoins)
 hastings_to_sc($hastings)
 ```
 
-### Validation:
+#### Validation:
 ```
 is_valid_address($address)
 ```
 
-### Database:
+#### Database:
 ```
 db_insert
 db_select
@@ -108,7 +108,7 @@ db_new_receivable
 db_update
 ```
 
-### RPC:
+#### RPC:
 ```
 rpc($cmd, $request='GET', $postfields=null)
 ```
