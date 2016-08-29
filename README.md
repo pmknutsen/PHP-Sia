@@ -48,53 +48,67 @@ e2356d2f621d571684b5f8f1fd5c8f2aa79c9d35f3100a5ec1669f38ad0135df309b816caaf0
 
 ## Methods Reference
 ### Network:
-OK	`is_connected_to_peers()`
-OK	`get_consensus()`
-OK	`get_gateway()`
-OK	`add_peer($address)`
-OK	`remove_peer($address)`
-OK	`get_peer_address_parts($address)`
+```
+is_connected_to_peers()
+get_consensus()
+get_gateway()
+add_peer($address)
+remove_peer($address)
+get_peer_address_parts($address)
+```
 
 ### Wallet:
-OK	`wallet_islocked()`
-OK	`wallet_lock()`
-OK	`wallet_unlock($encryptionpassword)`
-OK	`wallet_backup($destination)`
-OK	`wallet_sc_balance($decimals=NULL)`
-OK	`wallet_sf_balance($decimals = NULL)`
-OK	`wallet_address()`
-OK	`wallet_addresses()`
-OK	`wallet_transactions($startheight, $endheight)`
-OK	`wallet_transactions_addr($address)`
-OK	`wallet_addr_txn($address)`
-OK	`send_sc($siacoins, $address)`
-OK	`wallet_transaction($transactionid)`
-OK	`wallet_transaction_hastings_net($transaction)`
+```
+wallet_islocked()
+wallet_lock()
+wallet_unlock($encryptionpassword)
+wallet_backup($destination)
+wallet_sc_balance($decimals=NULL)
+wallet_sf_balance($decimals = NULL)
+wallet_address()
+wallet_addresses()
+wallet_transactions($startheight, $endheight)
+wallet_transactions_addr($address)
+wallet_addr_txn($address)
+send_sc($siacoins, $address)
+wallet_transaction($transactionid)
+wallet_transaction_hastings_net($transaction)
+```
 
 ### Renter:
-OK	`hostdb()`
-OK	`renter_files()`
-OK	`renter_file($siapath)`
-OK	`renter_upload($source, $siapath)`
-	`renter_download($siapath, $destination)`
-OK	`renter_delete($siapath)`
-OK	`renter_rename($siapath, $newname)`
-OK	`renter_check_siapath($siapath)`
+```
+hostdb()
+renter_files()
+renter_file($siapath)
+renter_upload($source, $siapath)
+	renter_download($siapath, $destination)
+renter_delete($siapath)
+renter_rename($siapath, $newname)
+renter_check_siapath($siapath)
+```
 
 ### Conversion:
-OK	`sia_round($n, $decimals = NULL)`
-OK	`sc_to_hastings($siacoins)`
-OK	`hastings_to_sc($hastings)`
+```
+sia_round($n, $decimals = NULL)
+sc_to_hastings($siacoins)
+hastings_to_sc($hastings)
+```
 
 ### Validation:
-OK	`is_valid_address($address)`
+```
+is_valid_address($address)
+```
 
 ### Database:
-	`db_insert`
-	`db_select`
-	`db_withdraw_funds`
-	`db_new_receivable`
-	`db_update`
+```
+db_insert
+db_select
+db_withdraw_funds
+db_new_receivable
+db_update
+```
 
 ### RPC:
-OK	`rpc($cmd, $request='GET', $postfields=null)`
+```
+rpc($cmd, $request='GET', $postfields=null)
+```
